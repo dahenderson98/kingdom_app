@@ -31,7 +31,7 @@ export default function Navbar() {
             <Box sx={{ borderBottom: 5, borderColor: 'rgba(0, 0, 0, 0.432)',  height: '100%', backgroundColor: 'rgb(104, 104, 104)'}}>
             <TabList
                 value={tabIndex}
-                
+                variant="scrollable"
                 scrollButtons="auto"
                 aria-label="NavBar"
                 textColor="primary"
