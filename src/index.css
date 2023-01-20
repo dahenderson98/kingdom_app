@@ -5,9 +5,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(153, 200, 212);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.Tab {
+  color: white
+}
+
+.Button {
+  margin-top: 5;
+}
+
+.Test {
+  background-color: rgba(0, 0, 0, 0.432);
 }
