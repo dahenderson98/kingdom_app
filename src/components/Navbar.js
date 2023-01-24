@@ -41,7 +41,7 @@ export default function Navbar() {
                 <Tab label="Transfer Board" value="1"/>
                 <Tab label="Missionaries" value="2"/>
                 <Tab label="Areas" value="3"/>
-                <Tab label="Zones" value="4" textColor="secondary"/>
+                <Tab label="Zones" value="4" />
             </TabList>
             </Box>
             <Box >

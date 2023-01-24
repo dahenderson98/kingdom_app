@@ -1,0 +1,6 @@
+{
+  "AppSyncApiName": "kingdomapp",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2023-01-24T08:00:59.568Z"
+}

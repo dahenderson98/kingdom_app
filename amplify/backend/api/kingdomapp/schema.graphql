@@ -1,0 +1,46 @@
+enum Sex {
+  MALE
+  FEMALE
+}
+
+enum Language {
+  ENGLISH
+  SPANISH
+  MANDARIN
+}
+
+type Missionary @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  first_name: String!
+  last_name: String!
+  sex: Sex
+  can_drive: Boolean
+  is_senior_companion: Boolean
+  language: Language
+  joined_mission: AWSDateTime
+  leaving_mission: AWSDateTime
+  hometown: String
+  notes: String
+}
+
+type Area @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  zone: ID @index(name: "byZone")
+  dl: String
+  phone_number: AWSPhone
+  apt_address: String
+  notes: String
+}
+
+type Zone @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  areas: [Area] @hasMany(indexName: "byZone", fields: ["id"])
+  zl_1: Missionary @hasOne
+  zl_2: Missionary @hasOne
+  stl_1: Missionary @hasOne
+  stl_2: Missionary @hasOne
+  note: String
+}
+ 
