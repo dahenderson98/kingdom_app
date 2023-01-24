@@ -1,4 +1,4 @@
-import Avatar from './Avatar.js';
+import Avatar from './components/Avatar.js';
 
 function UserInfo(props) {
   return (

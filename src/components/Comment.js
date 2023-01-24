@@ -1,4 +1,4 @@
-import UserInfo from './UserInfo.js';
+import UserInfo from '../UserInfo.js';
 
 function Comment(props) {
   return (
