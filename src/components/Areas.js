@@ -27,7 +27,12 @@ export default function Areas() {
         var items = areaList.data.listAreas.items
         var _areas = [];
         for (let i = 0; i < items.length; i++) {
-          _areas.push({ name: items[i].name, zone: items[i].zone, dl: items[i].dl, phone_number: items[i].phone_number, apt_address: items[i].apt_address, notes: items[i].apt_address });
+          _areas.push({ name: items[i].name, 
+                        zone: items[i].zone, 
+                        dl: items[i].dl, 
+                        phone_number: items[i].phone_number, 
+                        apt_address: items[i].apt_address, 
+                        notes: items[i].notes });
         };
         setAreas(_areas)
         setIsLoading(false);
@@ -50,7 +55,11 @@ export default function Areas() {
             <TableHead>
             <TableRow>
                 <TableCell><b>Name</b></TableCell>
+                <TableCell align="left"><b>Zone</b></TableCell>
                 <TableCell align="left"><b>District Leader</b></TableCell>
+                <TableCell align="left"><b>Phone Number</b></TableCell>
+                <TableCell align="left"><b>Apartment Address</b></TableCell>
+                <TableCell align="left"><b>Notes</b></TableCell>
             </TableRow>
             </TableHead>
             <TableBody>

@@ -63,7 +63,7 @@ export default function AreaUpdateForm(props) {
   const validations = {
     name: [{ type: "Required" }],
     dl: [],
-    phone_number: [{ type: "Phone" }],
+    phone_number: [],
     apt_address: [],
     notes: [],
   };
@@ -203,7 +203,6 @@ export default function AreaUpdateForm(props) {
         label="Phone number"
         isRequired={false}
         isReadOnly={false}
-        type="tel"
         value={phone_number}
         onChange={(e) => {
           let { value } = e.target;

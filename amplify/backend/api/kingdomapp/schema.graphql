@@ -28,7 +28,7 @@ type Area @model @auth(rules: [{allow: public}]) {
   name: String!
   zone: ID @index(name: "byZone")
   dl: String
-  phone_number: AWSPhone
+  phone_number: String
   apt_address: String
   notes: String
 }
