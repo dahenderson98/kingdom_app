@@ -18,11 +18,6 @@ export const createMissionary = /* GraphQL */ `
       leaving_mission
       hometown
       notes
-      createdAt
-      updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;

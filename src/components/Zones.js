@@ -27,7 +27,11 @@ export default function Zones() {
         var items = zoneList.data.listZones.items
         var _zones = [];
         for (let i = 0; i < items.length; i++) {
-          _zones.push({ name: items[i].name, zl1: items[i].zoneZl_1Id, zl2: items[i].zoneZl_1Id, stl1: items[i].zoneStl_1Id, stl2: items[i].zoneStl_2Id });
+          _zones.push({ name: items[i].name, 
+                        zl1: items[i].zoneZl_1Id, 
+                        zl2: items[i].zoneZl_2Id, 
+                        stl1: items[i].zoneStl_1Id, 
+                        stl2: items[i].zoneStl_2Id });
         };
         setZones(_zones)
         setIsLoading(false);

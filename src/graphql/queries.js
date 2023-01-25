@@ -15,11 +15,6 @@ export const getMissionary = /* GraphQL */ `
       leaving_mission
       hometown
       notes
-      createdAt
-      updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -42,11 +37,6 @@ export const listMissionaries = /* GraphQL */ `
         leaving_mission
         hometown
         notes
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       nextToken
       startedAt
@@ -78,11 +68,6 @@ export const syncMissionaries = /* GraphQL */ `
         leaving_mission
         hometown
         notes
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       nextToken
       startedAt
@@ -95,14 +80,10 @@ export const getArea = /* GraphQL */ `
       id
       name
       zone
+      dl
       phone_number
       apt_address
       notes
-      createdAt
-      updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -117,6 +98,7 @@ export const listAreas = /* GraphQL */ `
         id
         name
         zone
+        dl
         phone_number
         apt_address
         notes
@@ -143,14 +125,10 @@ export const syncAreas = /* GraphQL */ `
         id
         name
         zone
+        dl
         phone_number
         apt_address
         notes
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       nextToken
       startedAt
@@ -176,14 +154,10 @@ export const areasByZone = /* GraphQL */ `
         id
         name
         zone
+        dl
         phone_number
         apt_address
         notes
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       nextToken
       startedAt
@@ -211,11 +185,6 @@ export const getZone = /* GraphQL */ `
         leaving_mission
         hometown
         notes
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       zl_2 {
         id
@@ -229,11 +198,6 @@ export const getZone = /* GraphQL */ `
         leaving_mission
         hometown
         notes
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       stl_1 {
         id
@@ -247,11 +211,6 @@ export const getZone = /* GraphQL */ `
         leaving_mission
         hometown
         notes
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       stl_2 {
         id
@@ -265,18 +224,8 @@ export const getZone = /* GraphQL */ `
         leaving_mission
         hometown
         notes
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       note
-      createdAt
-      updatedAt
-      _version
-      _deleted
-      _lastChangedAt
       zoneZl_1Id
       zoneZl_2Id
       zoneStl_1Id
@@ -322,11 +271,6 @@ export const syncZones = /* GraphQL */ `
         id
         name
         note
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
         zoneZl_1Id
         zoneZl_2Id
         zoneStl_1Id
